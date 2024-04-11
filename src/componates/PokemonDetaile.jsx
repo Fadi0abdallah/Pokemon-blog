@@ -12,7 +12,7 @@ const PokemonsDetaile = () => {
             .then((data) => {
                 setPokemon(data)
             })
-    }, [])
+    }, [pokemonId])
     console.log('test')
     return (
         <section>
@@ -21,6 +21,8 @@ const PokemonsDetaile = () => {
                     <article>
                         <h1>{pokemon.name}</h1>
                         <img src={pokemon.image} alt={pokemon.name} />
+
+
                     </article>
                 ) : (
                     <h2>watiing</h2>
