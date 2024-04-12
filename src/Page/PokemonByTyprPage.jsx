@@ -7,6 +7,7 @@ const PokemonByTypePage = () => {
             <Header />
             <PokemonByType />
 
+
         </>
     )
 }
